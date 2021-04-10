@@ -1,0 +1,147 @@
+body{
+	font-family: Arial;
+	margin: 0px;
+	background-color: white;
+}
+
+.main{
+	font-family: 'Redressed', cursive;
+	font-size: 50pt;
+	text-transform: capitalize;
+	color: white;
+	height: 80px;
+	text-align: center;
+	padding-top: 13px;
+	padding-bottom: 13px;
+	background-color: #2e5fff;
+}
+
+.content{
+	margin-left: 100px;
+	margin-top: 40px;
+}
+
+.username{
+	display: block;
+	margin-bottom: 10px;
+	font-size: 20pt;
+}
+
+button{
+	font-family: 'Redressed', cursive;
+	margin-top: 30px;
+	font-size: 25pt;
+	border-width: 5px;
+	border-color: #2e5fff;
+	background-color: #2e5fff;
+	color: white;
+}
+
+.button{
+	text-align: center;
+	margin-top: 20px;
+}
+
+.minibut{
+	font-family: 'Redressed', cursive;
+	margin: 30px;
+	font-size: 15pt;
+	border-width: 5px;
+	border-color: #2e5fff;
+	background-color: #2e5fff;
+	color: white;
+}
+
+li{
+	width: 300px;
+}
+
+a{
+	text-decoration: none;
+}
+a:link{
+	color: #2e5fff;
+}
+a:visited{
+	color: #2e5fff;
+}
+
+.sub{
+	margin: 30px;
+	font-size: 15pt;
+	border-width: 5px;
+	border-color: #2e5fff;
+	background-color: #2e5fff;
+	color: white;
+	margin-left: 43px;
+}
+
+textarea{
+	height: 16px;
+	width: 200px;
+	resize: none;
+	vertical-align: bottom;
+}
+
+form{
+	margin-left: 500px;
+}
+
+.text{
+	margin: 30px;
+	font-size: 20pt;
+}
+
+div.text h1{
+	font-size: 25pt;
+	display: inline;
+	font-style: italic;
+}
+
+#addmes{
+	text-align: center;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	margin-left: 0px;
+}
+
+#bigtext{
+	height: 100px;
+	width: 500px;
+	resize: none;
+	overflow-y: scroll;
+	vertical-align: bottom;
+}
+
+legend{
+	font-weight: bold;
+	text-decoration: underline;
+	text-align: left;
+}
+
+fieldset.newmes{
+	width: 700px;
+	height: 260px;
+	margin-left: 300px;
+	margin-bottom: 50px;
+}
+
+fieldset.reg{
+	width: 305px;
+}
+
+fieldset.mes{
+	margin-bottom: 20px;
+	text-align: right;
+	margin-right: 20px;
+	margin-left: 20px;
+}
+
+h4{
+	font-weight: normal;
+	text-align: left;
+}
+
+em{
+	font-weight: bold;
+}

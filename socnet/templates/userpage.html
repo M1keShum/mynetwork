@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>{{user.name}} {{user.sname}}</title>
+            {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Redressed&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="main">Twitter</div>
+<a href="{% url 'mainpage'%}"><button class="minibut">Главная страница</button></a>
+
+<div class="text"><h1>{{ user.name }} {{ user.sname }}</h1></div>
+<div class="text">День рождения: {{ user.birthday }}  </div>
+<fieldset class="newmes">
+<form method="post" action="{% url 'addmessage' user.pk %}" id="addmes">
+    {% csrf_token %}
+    Пользователь: <select name="name"><option value="{{ user.name }} {{ user.sname }}">{{ user.name }} {{ user.sname }}</option></select><br><br>
+    Сообщение: <textarea name="message" maxlength="500" id="bigtext"></textarea><br>
+    <button type="submit" class="minibut">Отправить сообщение</button>
+</form>
+</fieldset>
+{% for message in messages %}
+<fieldset class="mes">
+    <legend>Сообщение:</legend>
+<h4>{{ message.message }}</h4>
+<em>{{ message.published }}</em>
+</fieldset>
+{% endfor %}
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Главная страница</title>
+{% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css'%}">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Redressed&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="main">Twitter</div>
+<div class="content">
+    <ul>
+{% for user in users %}
+<li><a class="username" href="{% url 'userpage' user.pk %}">{{ user.name }} {{ user.sname }}</a></li>
+{% endfor %}
+        </ul>
+    </div>
+    <div class="button"><a href="{% url 'adduser'%}"><button>Регистрация</button></a></div>
+</body>
+</html>
